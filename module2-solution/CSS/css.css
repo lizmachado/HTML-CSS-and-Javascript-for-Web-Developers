@@ -10,15 +10,10 @@ h1 {
   font-family: Helvetica;
 }
 
-*p{
-  padding-top: 80px ;
-  clear: right;
-  width: 90%;
+p{
+  padding: 40px 10px 10px 20px;
   font-family: Helvetica;
-
-}
-.row {
-  width: 100%;
+  font-size: 80%;
 }
 
 /* Simple Responsive Framework. */
@@ -31,13 +26,21 @@ h2{
   margin-top: 0;
   margin-bottom: 20px;  
 }
+div{
+  margin-top: 20px;
 
-div {  
+}
+div > div { 
+  margin-left: auto;
+  margin-right: auto ;
+  clear: both;
   border:1px solid black;
   height: 250px;
   overflow: none;
   background-color: lightgrey;
-  margin: 11px;
+  width:95%;
+
+
 }
 
 #chicken{
@@ -65,7 +68,7 @@ div {
     width: 25%;
   }
   .col-lg-4 {
-    width: 31.6%;
+    width: 33.3%;
   }
   .col-lg-5 {
     width: 41.66%;
