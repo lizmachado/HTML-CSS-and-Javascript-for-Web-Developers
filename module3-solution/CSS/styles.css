@@ -1,13 +1,140 @@
+/*----------------Bootstrapping------------------------------*/
+body {
+  font-size: 18px;
+  color: black;
+  font-family: 'Oxygen', sans-serif;
+}
 
-/********** Base styles **********/
-* {
-  box-sizing: border-box;
+/** HEADER **/
+#header-nav {
+  background-color: grey;
+  border-radius: 0;
+  border: 0;
+}
+
+.navbar-brand {
+  padding-top: 25px;
+}
+.navbar-default .navbar-brand {
+    color: white;
+}
+.navbar-brand h1 { /* Restaurant name */
+  font-family: 'Lora', serif;
+  color: navajowhite;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+#nav-list {
+  margin-top: 10px;
+}
+#nav-list a {
+  color: grey;
+  text-align: center;
+}
+#nav-list a:hover {
+  background: grey;
+  color: white;
+}
+#nav-list a span {
+  font-size: 1.8em;
+  color: grey;
+}
+
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #61122f;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}
+/* END HEADER */
+
+/* HOME PAGE */
+.container .jumbotron {
+  box-shadow: 0 0 50px #3F0C1F;
+  border: 2px solid #3F0C1F;
+}
+
+/* END HOME PAGE */
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 10px;
+    font-size: 5vw; /* 1vw = 1% of viewport width */
+  }
+
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+    background-color: lightgrey;
+    color: white;
+  }
+  #collapsable-nav a span { /* Collapsed nav menu glyph */
+    font-size: 1em;
+    margin-right: 5px;
+    background-color: lightgrey;
+    color: white;
+  }
+}
+  /* End Header */
+#home-tiles{
+  margin: 10px;
 
 }
-h1 {
+#Titles{
+color: grey;
+font-size: 1.5em;
+font-weight: bold;
+text-align: center;
+}
+#menu-tile, #specials-tile, #map-tile {
+  height: 250px;
+  width: 100%;
+  margin-bottom: 15px;
+  position: relative;
+  border: 2px solid #3F0C1F;
+  overflow: hidden;
+}
+
+#menu-tile:hover, #specials-tile:hover, #map-tile:hover {
+  box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+#menu-tile {
+  background-color: lightgrey;
+  background-position: center;
+}
+#specials-tile {
+  background-color: lightgrey;
+  background-position: center;
+}
+#map-tile{
+  background-color: lightgrey;
+  background-position: center;
+}
+
+
+
+
+/*h1 {
   font-family: Helvetica;
 }
-
+/*
+}
 p{
   padding: 40px 10px 10px 20px;
   font-family: Helvetica;
@@ -16,7 +143,7 @@ p{
 
 /* Simple Responsive Framework. */
 
-h2{
+/*h2{
   float: right;
   border:1px solid black;
   font-size: 125%;
@@ -51,7 +178,7 @@ div > div {
   background-color: yellow;
 }
 /********** Large devices only **********/
-@media (min-width: 992px) {
+/*@media (min-width: 992px) {
   .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
     float: left;
 
@@ -95,7 +222,7 @@ div > div {
 }
 
 /********** Medium devices only **********/
-@media (max-width: 991px) and (min-width: 768px) {
+/*@media (max-width: 991px) and (min-width: 768px) {
   .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
     float: left;
   }
@@ -178,4 +305,4 @@ div > div {
   .col-sm-12 {
     width: 100%;
   }
-}
+}*/
