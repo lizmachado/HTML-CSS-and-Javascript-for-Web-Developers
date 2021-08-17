@@ -40,8 +40,8 @@ body {
   text-align: center;
 }
 #nav-list a:hover {
-  background: grey;
-  color: white;
+  background: navajowhite;
+  
 }
 #nav-list a span {
   font-size: 1.8em;
@@ -80,13 +80,13 @@ body {
 
   #collapsable-nav a { /* Collapsed nav menu text */
     font-size: 1.2em;
-    background-color: lightgrey;
+    background-color: grey;
     color: white;
   }
   #collapsable-nav a span { /* Collapsed nav menu glyph */
     font-size: 1em;
     margin-right: 5px;
-    background-color: lightgrey;
+    background-color: grey;
     color: white;
   }
 }
@@ -113,8 +113,17 @@ text-align: center;
 #menu-tile:hover, #specials-tile:hover, #map-tile:hover {
   box-shadow: 0 1px 5px 1px #cccccc;
 }
-
+#chicken{
+  font-size: 1.2em;
+  font-weight: 900;
+}
+#home-tiles p{
+  padding: 10px;
+  font-size:0.8em;
+  font-family: arial;
+}
 #menu-tile {
+  padding: 10px;
   background-color: lightgrey;
   background-position: center;
 }
